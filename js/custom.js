@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 $(window).scroll(function(){
 	var plxScroll = $(this).scrollTop();
-	$('.parallax-1').css('transform', 'translate3d(0px, '+ ((plxScroll * -0.2)) +'px, 0px)');
+	$('.parallax-1').css('background-position', ' 0px '+ ((plxScroll * -0.2)) +'px');
 	$('.parallax-2').css('transform', 'translate3d(0, '+ ((plxScroll * 0.6)) +'px, 0)');
 });
 //scroll nav srink and top btn function
@@ -30,35 +30,6 @@ $(window).scroll(function () {
 		$('.top').fadeOut();
 	}
 })
-// Set the date we're counting down to
-var countDownDate = new Date("Mar 15, 2019 16:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "<span> Days</span> " + hours + "<span> Hour</span> "
-  + minutes + "<span> Minute</span> " + seconds + "<span> Second</span> ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-
 //active on scroll
 $(document).ready(function(){
   var scrollLink = $('.scroll');
@@ -88,5 +59,33 @@ $(window).load(function(){
 		$('.bounceInLeft').removeClass('bounceInLeft').addClass('fadeInUp');
 		$('footer .animatable').removeClass('animatable').removeClass('animated');
 	}
-	console.log(winwid);
+});
+
+
+$(".color_picker i").on('click', function() {
+	$(".color_picker").toggleClass('r0');
+});
+$(".color_picker div.red").on('click', function() {
+  $(":root").get(0).style.setProperty("--prc", "#ff4e3d");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(255, 78, 61, 0.80)");
+});
+$(".color_picker div.blue").on('click', function() {
+  $(":root").get(0).style.setProperty("--prc", "#3d8fff");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(61, 143, 255, 0.80)");
+});
+$(".color_picker div.green").on('click', function() {
+  $(":root").get(0).style.setProperty("--prc", "#22c622");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(34, 198, 34, 0.8)");
+});
+$(".color_picker div.golden").on('click', function() {
+  $(":root").get(0).style.setProperty("--prc", "#ff9e3d");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(255, 158, 61, 0.80)");
+});
+$(".color_picker div.yellow").on('click', function() {
+  $(":root").get(0).style.setProperty("--prc", "#fff83d");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(255, 248, 61, 0.80)");
+});
+$(".color_picker div.gray").on('click', function() {
+  $(":root").get(0).style.setProperty("--prc", "#999999");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(153, 153, 153, 0.80)");
 });
