@@ -78,8 +78,8 @@ $(".color_picker div.green").on('click', function() {
   $(":root").get(0).style.setProperty("--prcfi", "rgba(34, 198, 34, 0.8)");
 });
 $(".color_picker div.golden").on('click', function() {
-  $(":root").get(0).style.setProperty("--prc", "#ff9e3d");
-  $(":root").get(0).style.setProperty("--prcfi", "rgba(255, 158, 61, 0.80)");
+  $(":root").get(0).style.setProperty("--prc", "#f3c26b");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(243, 194, 107, 0.80)");
 });
 $(".color_picker div.yellow").on('click', function() {
   $(":root").get(0).style.setProperty("--prc", "#fff83d");
@@ -88,4 +88,40 @@ $(".color_picker div.yellow").on('click', function() {
 $(".color_picker div.gray").on('click', function() {
   $(":root").get(0).style.setProperty("--prc", "#999999");
   $(":root").get(0).style.setProperty("--prcfi", "rgba(153, 153, 153, 0.80)");
+});
+var mixer = mixitup('.row.filter');
+
+$('.slid').slick({
+  dots: false,
+  infinite: true,
+	autoplay: true,
+  speed: 300,
+  nextArrow: '<ul><li><i class="fa fa-chevron-right right_arrow"></i></li></ul>',
+  prevArrow: '<ul><li><i class="fa fa-chevron-left left_arrow"></i></li></ul>',
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });

@@ -68,6 +68,7 @@ h3.common{
 	font-weight: 400;
 	color: var(--hc);
 	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 p.common{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -76,6 +77,7 @@ p.common{
 	color: var(--prc);
 	text-align: center;
 	text-transform: capitalize;
+	padding-bottom: 5px;
 }
 p.common2{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -83,19 +85,25 @@ p.common2{
 	font-weight: 300;
 	color: var(--pc);
 }
+p.common3{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: var(--prc);
+}
 :root{
 	--prc: #ff4e3d;
 	--prcfi: rgba(255, 78, 61, 0.8);
 	--hc: #fff;
 	--pc: #999999;
-	--pcd: #404040;
+	--pcd: #333333;
 	--bgc: #2a2a2e;
 }
-.unerline{
+.underline{
 	width: 100px;
 	height: 2px;
 	background: var(--prc);
-	margin: 20px auto;
+	margin: 30px auto;
 }
 /*----------common css ends----------*/
 header {
@@ -343,6 +351,7 @@ span.menu-item-name:before {
 #about{
 	height: auto;
 	background: var(--bgc);
+	padding-bottom: 0px;
 }
 #about .about-part .about-img-part{
 	width: 100%;
@@ -426,7 +435,7 @@ span.menu-item-name:before {
 	padding-top: 50px;
 	background: var(--pcd);
 	margin-top: 80px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 #about .about-skill h3{
 	padding: 10px 0px;
@@ -439,87 +448,257 @@ span.menu-item-name:before {
 	background: var(--prc);
 	transition: all linear 0.3s;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
+	color: var(--pcd);
 }
-#about .about-skill .progress .progress-bar{}
-#about .about-skill .progress .progress-bar{}
-#about .about-skill{}
-#about .about-skill{}
-#about .about-skill{}
-/*working*/
-/*working*/
-/*working*/
-/*working*/
-/*working*/
-/*working*/
-/*working*/
-#about .about-skill{}
-#about .about-skill{}
-#about .about-skill{}
-#about .about-skill{}
-#about .about-skill{}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*about part ends*/
+/*service part starts*/
 #service{
 	height: auto;
 	background: var(--bgc);	
 }
+#service .box{
+	background: var(--pcd);
+	padding: 30px 25px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	transition: transform 0.6s;
+}
+#service .box i{
+	color: var(--prc);
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+#service .box h3.common{
+	position: relative;
+	margin-bottom: 20px;
+}
+#service .box h3.common:after{
+	position: absolute;
+	content: '';
+	width: 20%;
+	height: 2px;
+	background: var(--prc);
+	left: 0;
+	bottom: -15px;
+}
+#service .box:hover{
+	transform: translateY(-10px);
+	box-shadow: 5px 5px 10px 0px #212122;
+}
+#service .box:hover h3.common:after{
+	width: 30%;
+}
+/*services part ends*/
+/*portfolio part starts*/
+#portfolio{
+	height: auto;
+	background: var(--pcd);
+	padding-bottom: 0;
+}
+#portfolio .btn{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+#portfolio .btn button{
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 18px;
+	border: 0;
+	background: none;
+	color: var(--hc);
+	padding: 0 10px;
+	margin: 10px 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	position: relative;
+	transition: all linear 0.3s;
+}
+#portfolio .btn button:after{
+	position: absolute;
+	content: '';
+	width: calc(100% - 20px);
+	height: 2px;
+	background: var(--prc);
+	bottom: -3px;
+	left: 10px;
+	opacity: 0;
+}
+#portfolio .btn button:hover , #portfolio .btn button.mixitup-control-active, #portfolio .btn button:hover:after, #portfolio .btn button.mixitup-control-active:after{
+	opacity: 1;
+	color: var(--prc);
+}
+#portfolio .filter{
+	overflow: hidden;
+}
+#portfolio .filter .mix{
+	position: relative;
+	margin-bottom: 30px;
+}
+#portfolio .filter .mix .prot-ov{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 92%;
+	height: 100%;
+	margin-left: 15px;
+	position: absolute;
+	bottom: 70px;
+	background: var(--pcd);
+	transition: all linear 0.4s;
+	opacity: 0;
+}
+#portfolio .filter .mix .prot-ov h3.common{
+	margin-left: 50px;
+	position: absolute;
+	bottom: 70px;
+	left: 80px;
+	opacity: 0;
+	transition: all linear 0.3s;
+}
+#portfolio .filter .mix .prot-ov p{
+	color: var(--prc);
+	margin-left: 50px;
+	position: absolute;
+	bottom: 45px;
+	left: -80px;
+	opacity: 0;
+	transition: all linear 0.3s;
+}
+#portfolio .filter .mix:hover .prot-ov{
+	opacity: 1;
+	box-shadow: inset 0 0 0 10px #f1f1f1;
+}
+#portfolio .filter .mix:hover .prot-ov h3.common{
+	opacity: 1;
+	bottom: 70px;
+	left: 5px;
+}
+#portfolio .filter .mix:hover .prot-ov p{
+	bottom: 45px;
+	left: 5px;
+	opacity: 1;
+}
+#portfolio .client{
+	width: 100%;
+	background: var(--bgc);
+	margin-top: 100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#portfolio .client .underline{
+	margin-bottom: 20px;
+}
+#portfolio .client .slid{
+	width: 100%;
+}
+#portfolio .client .slid .slid-part{
+	width: 50%;
+	padding: 30px 25px;
+	margin: 50px;
+	background: var(--pcd);
+	box-sizing: border-box;
+	cursor: grab;
+}
+#portfolio .client .slid .slid-part img{
+	width: 70px;
+	height: 70px;
+	background: #000;
+	border-radius: 50%;
+	float: left;
+}
+#portfolio .client .slid .slid-part h3.common{
+	margin-left: 90px;
+}
+#portfolio .client .slid .slid-part p.common3{
+	margin-left: 90px;
+	margin-bottom: 30px;
+}
+#portfolio .client .slid .slid-part p.common2{
+	padding-right: 30px;
+	line-height: 28px;
+	margin-top: 40px;
+}
+#portfolio .client .slid ul.slick-arrow i{
+	color: var(--prc);
+	position: absolute;
+	bottom: -30px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	border: 1px solid var(--prc);
+	text-align: center;
+	cursor: pointer;
+}
+#portfolio .client .slid ul.slick-arrow i.left_arrow{
+	left: 45%;
+}
+#portfolio .client .slid ul.slick-arrow i.right_arrow{
+	right: 45%;
+}
 #portfolio{}
-#blog{}
+/*portfolio part ends*/
+/*blog part starts*/
+#blog{
+	height: auto;
+	background: var(--pcd);
+}
+#blog .blog-item{
+	overflow: hidden;
+	background: var(--bgc);
+}
+#blog .blog-item .blog-img{
+	overflow: hidden;
+	cursor: pointer;
+}
+#blog .blog-item .blog-img img{
+	width: 100%;
+}
+#blog .blog-item .blog-content{
+	padding: 30px 25px;
+}
+#blog .blog-item .blog-content a:nth-of-type(1){
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: var(--hc);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-top: 5px;
+}
+#blog .blog-item .blog-content p.common2{
+	padding: 15px 0;
+}
+#blog .blog-item .blog-content a:nth-of-type(2){
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--hc);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+}
+#blog .blog-item .blog-content a:hover{
+	color: var(--prc);
+}
+#blog .blog-item:hover{
+	box-shadow: 0px 0px 10px 0px var(--prc);
+}
+#blog .blog-item:hover .blog-img img{
+	transform: scale(1.1);
+}
+
+/*blog part ends*/
 #contact{}
+
+
+
+
+
+
 
 
 
@@ -551,6 +730,7 @@ span.menu-item-name:before {
 	color: var(--prc);
 	line-height: 30px;
 	animation: rotate 3s linear infinite;
+	cursor: pointer;
 }
 @keyframes rotate{
 	from{
@@ -562,21 +742,27 @@ span.menu-item-name:before {
 }
 .color_picker div.red{
 	background: #ff3d3d;
+	cursor: pointer;
 }
 .color_picker div.blue{
 	background: #3d8fff;
+	cursor: pointer;
 }
 .color_picker div.green{
 	background: #22c622;
+	cursor: pointer;
 }
 .color_picker div.golden{
-	background: #ff9e3d;
+	background: #f3c26b;
+	cursor: pointer;
 }
 .color_picker div.yellow{
 	background: #fff83d;
+	cursor: pointer;
 }
 .color_picker div.gray{
 	background: #999999;
+	cursor: pointer;
 }
 /*color picker*/
 /*top botton*/
@@ -658,7 +844,7 @@ span.menu-item-name:before {
 }
 .lds-facebook div:nth-child(3) {
   left: 45px;
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 @keyframes lds-facebook {
   0% {
@@ -790,6 +976,9 @@ span.menu-item-name:before {
 	#about .about-skill{
 		margin-top: 50px;
 	}
+	#portfolio .btn button{
+		margin: 10px 10px;
+	}
 }
 @media (max-width: 575px) and (min-width: 0px){
 	section{
@@ -868,6 +1057,10 @@ span.menu-item-name:before {
 	}
 	#about .about-skill{
 		margin-top: 50px;
+	}
+	#portfolio .btn button{
+		margin: 10px 10px;
+		font-size: 14px;
 	}
 	.top{
 		bottom: -10px;
