@@ -106,14 +106,14 @@ $('.slid').slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true
+        infinite: true,
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
     },
     {
@@ -124,4 +124,9 @@ $('.slid').slick({
       }
     }
   ]
+});
+$(document).ready(function(){
+    $('.venobox').venobox({
+		framewidth: '80vw',
+	}); 
 });
