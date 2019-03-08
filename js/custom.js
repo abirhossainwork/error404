@@ -1,13 +1,6 @@
 $(document).ready(function () {
 	
 });
-$(window).scroll(function(){
-	var plxScroll = $(this).scrollTop();
-	$('.parallax-1').css('background-position', ' 0px '+ ((plxScroll * -0.2)) +'px');
-	$('.parallax-2').css('transform', 'translate3d(0, '+ ((plxScroll * 0.6)) +'px, 0)');
-});
-//scroll nav srink and top btn function
-
 //top btn
 $top_to_btn = 300;
 
@@ -90,7 +83,7 @@ $(".color_picker div.gray").on('click', function() {
   $(":root").get(0).style.setProperty("--prcfi", "rgba(153, 153, 153, 0.80)");
 });
 var mixer = mixitup('.row.filter');
-
+//$('.row.filtered').mixItUp();
 $('.slid').slick({
   dots: false,
   infinite: true,
@@ -112,7 +105,7 @@ $('.slid').slick({
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
       }
     },

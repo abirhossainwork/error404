@@ -979,29 +979,6 @@ footer p a:hover{
   }
 }
 /*preloader*/
-/*padding*/
-.ptop-10{
-	padding-top: 10px;
-}
-.ptop-20{
-	padding-top: 20px;
-}
-.ptop-30{
-	padding-top: 30px;
-}
-.ptop-40{
-	padding-top: 40px;
-}
-.ptop-50{
-	padding-top: 50px;
-}
-.ptop-60{
-	padding-top: 60px;
-}
-.ptop-100{
-	padding-top: 100px;
-}
-/*padding*/
 
 /*----------responsive----------*/
 @media (max-width: 1600px) and (min-width: 1200px){
@@ -1011,14 +988,55 @@ footer p a:hover{
 	}
 }
 @media (max-width: 1199px) and (min-width: 992px){
+	#home h1{
+		margin-left: 100px;
+	}
+	#home p{
+		margin-left: 100px;
+	}
+	#home a{
+		margin-left: 100px;
+	}
 	#home h1:after{
 		width: 0;
 	}
-
+	#contact form input[type=email], #contact form input[type=text]{
+		margin: 10px 5px;
+	}
+	#contact form input[type=text].sub{
+		width: 98%;
+	}
 }
 /*medium devices*/
 @media (max-width: 991px) and (min-width: 768px){
-	
+	#home h1{
+		margin-left: 50px;
+		font-size: 5vw;
+	}
+	#home p{
+		margin-left: 50px;
+		font-size: 1.5vw;
+	}
+	#home a{
+		margin-left: 50px;
+		font-size: 1.5vw;
+	}
+	#home h1:after{
+		width: 0;
+	}
+	#contact form input[type=email], #contact form input[type=text]{
+		width: 47%;
+		margin: 10px 8px;
+	}
+	#contact form input[type=text].sub{
+		width: 97%;
+	}
+	#contact form textarea{
+		width: 97%;
+	}
+	#contact form button{
+		width: 97%;
+	}
 }
 /*small devices*/
 @media (max-width: 767px) and (min-width: 576px){
@@ -1107,23 +1125,40 @@ footer p a:hover{
 	#portfolio .client .slid ul.slick-arrow i.left_arrow{
 		display: none;
 	}
+	#portfolio .client .slid .slid-part p.common2{
+		font-size: 14px;
+	}
 	#blog .blog-item{
 		margin-top: 20px;
-	}
-	#contact .coni{
-		margin-top: 10px;
 	}
 	footer{
 		width: 100%;
 		margin-left: 0;
+	}
+	.mt-20{
+		margin-bottom: 20px;
+	}
+	#contact form input[type=email], #contact form input[type=text]{
+		width: 96%;
+		margin: 10px 9px;
+	}
+	#contact form input[type=text].sub{
+		width: 96%;
+	}
+	#contact form textarea{
+		width: 96%;
+	}
+	#contact form button{
+		width: 96%;
 	}
 }
 @media (max-width: 575px) and (min-width: 0px){
 	section{
 		width: 100%;
 		height: auto;
-		padding: 80px 0px;
+		padding: 80px 10px;
 		margin-left: 0;
+		box-sizing: border-box;
 	}
 	header {
         width: 100%;
@@ -1169,6 +1204,7 @@ footer p a:hover{
     }
 	#home h1{
 		font-size: 10vw;
+		margin-left: 25px;
 	}
 	#home h1:after{
 		width: 0;
@@ -1176,9 +1212,11 @@ footer p a:hover{
 	#home p{
 		font-size: 4vw;
 		margin: 35px 0;
+		margin-left: 25px;
 	}
 	#home a{
 		font-size: 4vw;
+		margin-left: 25px;
 	}
 	#about{
 		height: auto;
@@ -1206,6 +1244,9 @@ footer p a:hover{
 	#portfolio .client .slid ul.slick-arrow i.left_arrow{
 		display: none;
 	}
+	#portfolio .client .slid .slid-part p.common2{
+		font-size: 14px;
+	}
 	.top{
 		bottom: -10px;
 		right: 10px;
@@ -1219,5 +1260,21 @@ footer p a:hover{
 	footer{
 		width: 100%;
 		margin-left: 0;
+	}
+	.mt-20{
+		margin-bottom: 20px;
+	}
+	#contact form input[type=email], #contact form input[type=text]{
+		width: 95%;
+		margin: 10px 9px;
+	}
+	#contact form input[type=text].sub{
+		width: 96%;
+	}
+	#contact form textarea{
+		width: 96%;
+	}
+	#contact form button{
+		width: 96%;
 	}
 }
