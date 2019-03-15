@@ -123,3 +123,14 @@ $(document).ready(function(){
 		framewidth: '80vw',
 	}); 
 });
+$(document).ready(function () {
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 1000) {
+			// scroll down abit and get the action   
+			$(".prog-bar").each(function () {
+				$each_bar_width = $(this).attr('aria-valuenow');
+				$(this).width($each_bar_width + '%');
+			});
+		}
+	});
+});

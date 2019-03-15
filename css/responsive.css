@@ -42,6 +42,15 @@
 	#home h1:after{
 		width: 0;
 	}
+	#portfolio .client .slid .slid-part p.common2 span{
+		display: none;
+	}
+	#portfolio .client .slid ul.slick-arrow i.left_arrow{
+		left: 42%;
+	}
+	#portfolio .client .slid ul.slick-arrow i.right_arrow{
+		right: 42%;
+	}
 	#contact form input[type=email], #contact form input[type=text]{
 		width: 47%;
 		margin: 10px 8px;
@@ -145,6 +154,12 @@
 	}
 	#portfolio .client .slid .slid-part p.common2{
 		font-size: 14px;
+	}
+	#portfolio .client .slid .slid-part p.common2 span{
+		display: none;
+	}
+	#portfolio  .filter  .mix  .prot-ov{
+		width: 94.5%;
 	}
 	#blog .blog-item{
 		margin-top: 20px;
