@@ -152,6 +152,27 @@
 	#portfolio .client .slid ul.slick-arrow i.left_arrow{
 		display: none;
 	}
+	#portfolio .client .slid ul.slick-dots{
+		width: 100px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#portfolio .client .slid ul.slick-dots li{
+		width: 20px;
+		display: inline-block;
+	}
+	#portfolio .client .slid ul.slick-dots li button{
+		width: 10px;
+		height: 10px;
+		margin: 1px;
+		font-size: 0;
+		border: 0;
+		background: var(--pc);
+		border-radius: 50%;
+	}
+	#portfolio .client .slid ul.slick-dots li.slick-active button{
+		background: var(--prc);
+	}
 	#portfolio .client .slid .slid-part p.common2{
 		font-size: 14px;
 	}
@@ -298,6 +319,26 @@
 	}
 	#portfolio .client .slid ul.slick-arrow i.left_arrow{
 		display: none;
+	}#portfolio .client .slid ul.slick-dots{
+		width: 100px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#portfolio .client .slid ul.slick-dots li{
+		width: 20px;
+		display: inline-block;
+	}
+	#portfolio .client .slid ul.slick-dots li button{
+		width: 10px;
+		height: 10px;
+		margin: 1px;
+		font-size: 0;
+		border: 0;
+		background: var(--pc);
+		border-radius: 50%;
+	}
+	#portfolio .client .slid ul.slick-dots li.slick-active button{
+		background: var(--prc);
 	}
 	#portfolio .client .slid .slid-part{
 		margin: 20px;

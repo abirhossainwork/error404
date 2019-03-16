@@ -107,13 +107,15 @@ $('.slid').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+		dots: true,
       }
     },
     {
       breakpoint: 576,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+		dots: true,
       }
     }
   ]
@@ -126,7 +128,6 @@ $(document).ready(function(){
 $(document).ready(function () {
 	$(window).scroll(function () {
 		if ($(window).scrollTop() > 1000) {
-			// scroll down abit and get the action   
 			$(".prog-bar").each(function () {
 				$each_bar_width = $(this).attr('aria-valuenow');
 				$(this).width($each_bar_width + '%');

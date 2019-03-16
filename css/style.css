@@ -95,7 +95,6 @@ p.common3{
 	--pc: #999999;
 	--pcd: #333333;
 	--bgc: #2a2a2e;
-	transition: all linear 0.3s;
 }
 .underline{
 	width: 100px;
@@ -452,7 +451,7 @@ span.menu-item-name:before {
 }
 #about .about-skill .prog .prog-bar:after{
 	position: absolute;
-	content: attr(aria-valuenow);
+	content: attr(data-toggle);
 	background: var(--prc);
 	color: var(--hc);
 	font-size: 16px;
@@ -509,6 +508,7 @@ span.menu-item-name:before {
 	background: var(--prc);
 	left: 0;
 	bottom: -15px;
+	transition: all linear 0.3s;
 }
 #service .box:hover{
 	transform: translateY(-10px);
@@ -730,7 +730,6 @@ span.menu-item-name:before {
 #blog .blog-item:hover .blog-img img{
 	transform: scale(1.1);
 }
-
 /*blog part ends*/
 #contact{
 	height: auto;
@@ -812,10 +811,18 @@ span.menu-item-name:before {
 	height: 50px;
 	background: var(--prc);
 	color: var(--hc);
+	color: #000;
 /*	color: var(--bgc);*/
 	border: none;
 	margin: 10px 10px;
 	text-transform: uppercase;
+	font-weight: 600;
+	transition: all linear 0.3s;
+	cursor: pointer;
+}
+#contact form button:hover{
+	background: var(--prcfi);
+	color: #000;
 }
 /*contact part ends*/
 /*footer part starts*/
@@ -851,12 +858,6 @@ footer p a:hover{
 	color: var(--prc)
 }
 /*footer part ends*/
-
-
-
-
-
-
 /*color picker*/
 .color_picker{
 	width: 350px;
