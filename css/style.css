@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
 	padding: 0;
 	margin: 0;
@@ -731,7 +730,7 @@ span.menu-item-name:before {
 #portfolio .client {
 	width: 100%;
 	background: var(--bgc);
-	/*	padding-top: 60px;*/
+	padding-top: 60px;
 	padding-bottom: 100px;
 }
 
@@ -1058,12 +1057,13 @@ footer p a:hover {
 }
 
 .color_picker div.blue {
-	background: #3d8fff;
+	background: #08c;
+	background: rgba(0, 136, 204, 0.80);
 	cursor: pointer;
 }
 
 .color_picker div.green {
-	background: #22c622;
+	background: #a0ce4e;
 	cursor: pointer;
 }
 
@@ -1073,7 +1073,7 @@ footer p a:hover {
 }
 
 .color_picker div.yellow {
-	background: #fff83d;
+	background: #ffc10f;
 	cursor: pointer;
 }
 

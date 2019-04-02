@@ -63,20 +63,21 @@ $(".color_picker div.red").on('click', function() {
   $(":root").get(0).style.setProperty("--prcfi", "rgba(255, 78, 61, 0.80)");
 });
 $(".color_picker div.blue").on('click', function() {
-  $(":root").get(0).style.setProperty("--prc", "#3d8fff");
-  $(":root").get(0).style.setProperty("--prcfi", "rgba(61, 143, 255, 0.80)");
+  $(":root").get(0).style.setProperty("--prc", "#08c");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(0, 136, 204, 0.80)");
 });
 $(".color_picker div.green").on('click', function() {
-  $(":root").get(0).style.setProperty("--prc", "#22c622");
-  $(":root").get(0).style.setProperty("--prcfi", "rgba(34, 198, 34, 0.8)");
+  $(":root").get(0).style.setProperty("--prc", "#a0ce4e");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(160, 206, 78, 0.80)");
+  $("#about .about-skill .prog .prog-bar:after").css("color : #000");
 });
 $(".color_picker div.golden").on('click', function() {
   $(":root").get(0).style.setProperty("--prc", "#f3c26b");
   $(":root").get(0).style.setProperty("--prcfi", "rgba(243, 194, 107, 0.80)");
 });
 $(".color_picker div.yellow").on('click', function() {
-  $(":root").get(0).style.setProperty("--prc", "#fff83d");
-  $(":root").get(0).style.setProperty("--prcfi", "rgba(255, 248, 61, 0.80)");
+  $(":root").get(0).style.setProperty("--prc", "#ffc10f");
+  $(":root").get(0).style.setProperty("--prcfi", "rgba(255, 213, 0, 0.80)");
 });
 $(".color_picker div.gray").on('click', function() {
   $(":root").get(0).style.setProperty("--prc", "#999999");
