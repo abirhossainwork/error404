@@ -469,13 +469,15 @@
 		margin: 10px 10px;
 		font-size: 14px;
 	}
-
+	#portfolio .filter {
+		overflow: hidden;
+		padding-bottom: 50px;
+	}	
 	#portfolio .client {
-		margin-top: 50px;
+/*		margin-top: 50px;*/
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
-
 	#portfolio .client .slid ul.slick-arrow i.right_arrow {
 		display: none;
 	}
